@@ -71,8 +71,8 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
-# Licensed Assets
-/Assets/Licensed Assets*
+# ThirdParty Library
+/Assets/ThirdParty Library*
 
 # ML-Agents
 /Assets/ML-Agents/Timers*
