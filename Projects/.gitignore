@@ -72,7 +72,7 @@ crashlytics-build.properties
 /[Aa]ssets/[Ss]treamingAssets/aa/*
 
 # Licensed Assets
-/Assets/Licensed Assets
+/Assets/Licensed Assets*
 
 # ML-Agents
-/Assets/ML-Agents/Timers
+/Assets/ML-Agents/Timers*
