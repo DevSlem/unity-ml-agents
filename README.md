@@ -1,14 +1,12 @@
 # Unity ML-Agents Study
 
 Unity ML-Agents 공부를 기록하기 위해 만든 repository.  
-반드시 공식 문서에 따라 미리 Unity ML-Agetns Toolkit 관련 요소를 미리 설치해야함.  
+반드시 공식 문서에 따라 미리 Unity ML-Agetns Toolkit 관련 요소를 미리 설치후 import해야함.
 
-> [ML-Agents Toolkit Link](https://github.com/Unity-Technologies/ml-agents)
+### Environment
 
-### Settings
-
-* Unity Editor: 2020.3.25f1
-* Unity ML-Agents Toolkit: Release 19
+* Unity Editor: 2021.3.2f1
+* [Unity ML-Agents Toolkit: Release 19](https://github.com/Unity-Technologies/ml-agents/tree/release_19)
 * Python: 3.6.13
 
 ## Unity Environment
