@@ -7,7 +7,10 @@ Unity ML-Agents 공부를 기록하기 위해 만든 repository.
 
 * Unity Editor: 2021.3.2f1
 * [Unity ML-Agents Toolkit: Release 19](https://github.com/Unity-Technologies/ml-agents/tree/release_19)
-* Python: 3.6.13
+* Python: 3.6 or higher (I use 3.7.13)
+* PyTorch 1.11.0 / CUDA 11.3
+
+> Note: Don't install PyTorch **cpuonly** version. If so, you may not be able to use cuda.
 
 ## Unity Environment
 
