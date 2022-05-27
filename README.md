@@ -3,7 +3,7 @@
 Unity ML-Agents 공부를 기록하기 위해 만든 repository.  
 반드시 공식 문서에 따라 미리 Unity ML-Agetns Toolkit 관련 요소를 미리 설치후 import해야함.
 
-### Development Environment
+## Development Environment
 
 * Unity Editor: 2021.3.2f1
 * [Unity ML-Agents Toolkit: Release 19](https://github.com/Unity-Technologies/ml-agents/tree/release_19)
@@ -12,7 +12,15 @@ Unity ML-Agents 공부를 기록하기 위해 만든 repository.
 
 > Note: Don't install PyTorch **cpuonly** version. If so, you may not be able to use cuda.
 
-## Unity Environment
+## Structure
+
+* [DRL Models](/DRL%20Models/) - Custom DRL models in which ML-Agents Python low level api is used
+* [Projects](/Projects/) - Unity Project
+* [config](/config/) - Training configuration files
+* [results](/results/) - Training result files
+
+
+## Unity Environments
 
 직접 만든 Unity Environment들을 간단히 기록함.
 
