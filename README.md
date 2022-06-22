@@ -15,9 +15,9 @@ Unity ML-Agents 공부를 기록하기 위해 만든 repository.
 ## Structure
 
 * [Custom Trainings](/Custom%20Trainings/) - Custom trainings in which ML-Agents Python low level api is used
-* [Projects](/Projects/) - Unity project
+* [Unity Project](/Projects/) - Unity project folder
 * [config](/config/) - Training configuration files
-* [results](/results/) - Training result files
+* [Training Results](/results/) - Training result onnx files
 
 
 ## Unity Environments
