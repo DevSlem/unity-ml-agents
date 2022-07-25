@@ -4,17 +4,16 @@ You can use some environments that i've developed to train reinforcement learnin
 
 ## Development Environment
 
-* Unity Editor: 2021.3.2f1
+* Unity Editor: 2021.3.6f1
 * [Unity ML-Agents Toolkit: Release 19](https://github.com/Unity-Technologies/ml-agents/tree/release_19)
-* Python: 3.6 or higher (I use 3.7.13)
-* PyTorch 1.11.0 / CUDA 11.3
+* Python: 3.7.13
+* PyTorch 1.12.0 / CUDA 11.3
 
 > Note: Don't install PyTorch **cpuonly** version. If so, you may not be able to use cuda.
 
 ## Structure
 
-* [Custom Trainings](/Custom%20Trainings/) - Custom trainings in which ML-Agents Python low level api is used
-* [Unity Project](/Unity%20Project/) - Unity project folder
+* [Unity ML-Agents Project](/Unity%20ML-Agents%20Project/) - Unity project folder
 * [config](/config/) - Training configuration files
 * [Training Results](/Training%20Results/) - Training result onnx files
 
