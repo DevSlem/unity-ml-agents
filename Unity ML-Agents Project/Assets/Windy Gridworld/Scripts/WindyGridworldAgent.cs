@@ -8,10 +8,24 @@ using Unity.MLAgents.Actuators;
 public class WindyGridworldAgent : Agent
 {
     public Transform actionArrow;
+    public LineRenderer pathRenderer;
     public Vector2Int startPos;
     public Vector2Int goalPos;
 
     private Vector2Int currentPos;
+    private List<Vector3> movementPath;
+    private readonly int maxPathCount = 100;
+
+    /// <summary>
+    /// Awake is called when the script instance is being loaded.
+    /// </summary>
+    private void Awake()
+    {
+        if (pathRenderer != null)
+        {
+            movementPath = new List<Vector3>();
+        }
+    }
 
     // Wind force at the current position
     private Vector2Int WindForce
@@ -36,6 +50,9 @@ public class WindyGridworldAgent : Agent
     public override void OnEpisodeBegin()
     {
         UpdatePosition(startPos);
+        // update path renderer if possible
+        movementPath?.Clear();
+        UpdatePathRenderer();
     }
 
     public override void CollectObservations(VectorSensor sensor)
@@ -59,6 +76,8 @@ public class WindyGridworldAgent : Agent
             0f,
             Vector2.SignedAngle(Vector2.up, movement)
         );
+        // update path renderer if possible
+        UpdatePathRenderer();
 
         // reached goal
         if (currentPos == goalPos)
@@ -122,5 +141,20 @@ public class WindyGridworldAgent : Agent
 
         currentPos = position;
         transform.localPosition = (Vector2)position;
+    }
+
+    private void UpdatePathRenderer()
+    {
+        if (movementPath is null)
+        {
+            return;
+        }
+        movementPath.Add((Vector2)currentPos);
+        if (movementPath.Count > maxPathCount)
+        {
+            movementPath.RemoveAt(0);
+        }
+        pathRenderer.positionCount = movementPath.Count;
+        pathRenderer.SetPositions(movementPath.ToArray());
     }
 }
