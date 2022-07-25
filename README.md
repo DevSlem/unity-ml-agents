@@ -1,7 +1,6 @@
-# Unity ML-Agents Study
+# Unity ML-Agents
 
-Unity ML-Agents 공부를 기록하기 위해 만든 repository.  
-반드시 공식 문서에 따라 미리 Unity ML-Agetns Toolkit 관련 요소를 미리 설치후 import해야함.
+You can use some environments that i've developed to train reinforcement learning agent.
 
 ## Development Environment
 
