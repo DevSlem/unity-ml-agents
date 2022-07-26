@@ -26,6 +26,28 @@ namespace DevSlem.MLAgents
             {
                 movementPath = new List<Vector3>();
             }
+
+            Academy.Instance.AgentPreStep += MakeRequest;
+        }
+
+        private void OnDestroy()
+        {
+            if (Academy.IsInitialized)
+            {
+                Academy.Instance.AgentPreStep -= MakeRequest;
+            }
+        }
+
+        private void MakeRequest(int obj)
+        {
+            // reached goal
+            if (currentPos == goalPos)
+            {
+                EndEpisode();
+                return;
+            }
+
+            RequestDecision();
         }
 
         // Wind force at the current position
@@ -67,13 +89,6 @@ namespace DevSlem.MLAgents
 
         public override void OnActionReceived(ActionBuffers actions)
         {
-            // reached goal
-            if (currentPos == goalPos)
-            {
-                EndEpisode();
-                return;
-            }
-
             // get an action
             int action = actions.DiscreteActions[0];
             // set movement
