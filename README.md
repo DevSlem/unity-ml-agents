@@ -4,9 +4,9 @@ You can use environments that i've developed when you train a reinforcement lear
 
 ## Latest Environment
 
-[RollerBall](https://github.com/DevSlem/unity-ml-agents/wiki/RollerBall)
+[Windy Gridworld](https://github.com/DevSlem/unity-ml-agents/wiki/Windy-Gridworld)
 
-![](/Images/rollerball.webp)
+![](/Images/windygridworld.webp)
 
 ## Development Environment
 

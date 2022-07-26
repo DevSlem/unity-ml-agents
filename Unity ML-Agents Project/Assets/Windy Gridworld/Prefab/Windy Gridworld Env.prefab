@@ -1653,7 +1653,7 @@ GameObject:
   - component: {fileID: 8693209639803273169}
   - component: {fileID: 8693209639803273199}
   - component: {fileID: 8693209639803273198}
-  - component: {fileID: 8693209639803273197}
+  - component: {fileID: 1943636890370599724}
   m_Layer: 0
   m_Name: Windy Gridworld Agent
   m_TagString: Untagged
@@ -1771,7 +1771,7 @@ MonoBehaviour:
     VectorActionDescriptions: []
     VectorActionSpaceType: 0
     hasUpgradedBrainParametersWithActionSpec: 1
-  m_Model: {fileID: 0}
+  m_Model: {fileID: 5022602860645237092, guid: 7e97dd029ecc693459e6226af17acf97, type: 3}
   m_InferenceDevice: 0
   m_BehaviorType: 0
   m_BehaviorName: WindyGridworld
@@ -1780,7 +1780,7 @@ MonoBehaviour:
   m_UseChildActuators: 1
   m_DeterministicInference: 0
   m_ObservableAttributeHandling: 0
---- !u!114 &8693209639803273197
+--- !u!114 &1943636890370599724
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -1792,8 +1792,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a5c9d521e5ef4759a8246a07d52221e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DecisionPeriod: 10
-  TakeActionsBetweenDecisions: 1
+  DecisionPeriod: 1
+  TakeActionsBetweenDecisions: 0
 --- !u!1 &8693209640112489840
 GameObject:
   m_ObjectHideFlags: 0
