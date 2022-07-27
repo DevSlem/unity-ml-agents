@@ -23,7 +23,7 @@ python -m pip install mlagents==0.28.0
 
 ## Unity Environments
 
-First of all, Open `Unity ML-Agents Project` in Unity Hub. After it, You can see environments directories in `Assets` folder. You can use them as a two ways to train.
+First of all, open `Unity ML-Agents Project` in Unity Hub. After it, you can see directories of environments in `Assets` folder. You can use them as a two ways to train.
 
 1. build an environment as an executable file
 2. directly interact with Unity Editor
