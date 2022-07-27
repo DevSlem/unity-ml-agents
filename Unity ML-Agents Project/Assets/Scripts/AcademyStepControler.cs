@@ -1,6 +1,7 @@
 using Unity.MLAgents;
 using UnityEngine;
 using System;
+using Unity.MLAgents.SideChannels;
 
 namespace DevSlem.MLAgents
 {
@@ -51,6 +52,7 @@ namespace DevSlem.MLAgents
             }
         }
 
+        private FloatPropertiesChannel channel;
         private bool isTraining;
         private int fixedUpdateCallCount;
 
@@ -65,6 +67,23 @@ namespace DevSlem.MLAgents
 
             isTraining = Academy.Instance.IsCommunicatorOn;
             Academy.Instance.AutomaticSteppingEnabled = false;
+            InitializeSideChannel();
+        }
+
+        private void OnDestroy()
+        {
+            if (channel is not null)
+            {
+                SideChannelManager.UnregisterSideChannel(channel);
+            }
+        }
+
+        private void InitializeSideChannel()
+        {
+            channel = new FloatPropertiesChannel();
+            channel.RegisterCallback("fixedupdate_per_step_when_training", value => fixedUpdatePerStep.Training = (int)value);
+            channel.RegisterCallback("fixedupdate_per_step_when_inference", value => fixedUpdatePerStep.Inference = (int)value);
+            SideChannelManager.RegisterSideChannel(channel);
         }
 
         private void FixedUpdate()

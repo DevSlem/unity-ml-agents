@@ -17,7 +17,7 @@ You can use environments that i've developed when you train a reinforcement lear
 Install the `mlagents` Python package
 
 ```
-pip3 install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
+conda install pytorch==1.11.0 torchvision==0.12.0 torchaudio==0.11.0 cudatoolkit=11.3 -c pytorch
 python -m pip install mlagents==0.28.0
 ```
 
