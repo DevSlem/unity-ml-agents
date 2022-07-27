@@ -14,10 +14,11 @@ You can use environments that i've developed when you train a reinforcement lear
 * [Unity ML-Agents Toolkit: Release 19](https://github.com/Unity-Technologies/ml-agents/tree/release_19)
 * Python: 3.7.13
 
-If you want not to care about python environment settings, create an anaconda environment using this command:
+Install the `mlagents` Python package
 
 ```
-conda env create -f conda_env.yaml
+pip3 install torch~=1.7.1 -f https://download.pytorch.org/whl/torch_stable.html
+python -m pip install mlagents==0.28.0
 ```
 
 ## Unity Environments
