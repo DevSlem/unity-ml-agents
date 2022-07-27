@@ -4,5 +4,8 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Windy Gridworld/Scene/Windy Gridworld.unity
+    guid: 51c87724aea4d5c4090e213b3e921a71
   m_configObjects: {}
