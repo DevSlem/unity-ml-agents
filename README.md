@@ -23,9 +23,9 @@ python -m pip install mlagents==0.28.0
 
 ## Unity Environments
 
-First of all, Open `Unity ML-Agents Project` in Unity Hub. After it, You can see environments directories in `Assets` folder. You can use them as a two ways to train.
+First of all, Open the `Unity ML-Agents Project` project. After it, You can see the `Assets/Environments` directory which includes all RL environments. Go to the `Assets/Environments/<Environment Name>/Scenes` folder, if you want to use an environment. Open the scene file of the environment. You can use it as two ways to train.
 
-1. build an environment as an executable file
+1. [build an environment as an executable file](https://github.com/Unity-Technologies/ml-agents/blob/release_19_docs/docs/Learning-Environment-Executable.md)
 2. directly interact with Unity Editor
 
 You can see descriptions of environments in [Wiki](https://github.com/DevSlem/unity-ml-agents/wiki).
