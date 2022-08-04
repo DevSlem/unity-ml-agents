@@ -4,9 +4,9 @@ You can use environments that i've developed when you train a reinforcement lear
 
 ## Latest Environment
 
-[Windy Gridworld](https://github.com/DevSlem/unity-ml-agents/wiki/Windy-Gridworld)
+[Cliff Walking](https://github.com/DevSlem/unity-ml-agents/wiki/Cliff-Walking)
 
-![](/Images/windygridworld.webp)
+<img src="/Images/cliffwalking.webp" width="60%">
 
 ## Development Environment
 
