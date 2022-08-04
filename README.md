@@ -4,9 +4,9 @@ You can use environments that i've developed when you train a reinforcement lear
 
 ## Latest Environment
 
-[Windy Gridworld](https://github.com/DevSlem/unity-ml-agents/wiki/Windy-Gridworld)
+[Cliff Walking](https://github.com/DevSlem/unity-ml-agents/wiki/Cliff-Walking)
 
-![](/Images/windygridworld.webp)
+<img src="/Images/cliffwalking.webp" width="60%">
 
 ## Development Environment
 
@@ -23,9 +23,9 @@ python -m pip install mlagents==0.28.0
 
 ## Unity Environments
 
-First of all, open `Unity ML-Agents Project` in Unity Hub. After it, you can see directories of environments in `Assets` folder. You can use them as a two ways to train.
+First of all, Open the `Unity ML-Agents Project` project. After it, You can see the `Assets/Environments` directory which includes all RL environments. Go to the `Assets/Environments/<Environment Name>/Scenes` folder, if you want to use an environment. Open the scene file of the environment. You can use it as two ways to train.
 
-1. build an environment as an executable file
+1. [build an environment as an executable file](https://github.com/Unity-Technologies/ml-agents/blob/release_19_docs/docs/Learning-Environment-Executable.md)
 2. directly interact with Unity Editor
 
 You can see descriptions of environments in [Wiki](https://github.com/DevSlem/unity-ml-agents/wiki).

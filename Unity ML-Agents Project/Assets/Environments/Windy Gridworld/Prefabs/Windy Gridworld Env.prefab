@@ -1777,7 +1777,7 @@ MonoBehaviour:
   TeamId: 0
   m_UseChildSensors: 1
   m_UseChildActuators: 1
-  m_DeterministicInference: 0
+  m_DeterministicInference: 1
   m_ObservableAttributeHandling: 0
 --- !u!1 &8693209640112489840
 GameObject:
